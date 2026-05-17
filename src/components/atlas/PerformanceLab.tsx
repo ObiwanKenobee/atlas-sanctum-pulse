@@ -123,7 +123,7 @@ export function PerformanceLab() {
               </div>
               <div className="font-mono text-[10px] text-telemetry">REPLAY: Q3 · 11:42</div>
             </div>
-            <div className="mt-4 grid grid-cols-16 gap-0.5">
+            <div className="mt-4 grid gap-0.5" style={{ gridTemplateColumns: "repeat(16, minmax(0, 1fr))" }}>
               {Array.from({ length: 16 * 10 }).map((_, i) => {
                 const heat = Math.random();
                 return (
