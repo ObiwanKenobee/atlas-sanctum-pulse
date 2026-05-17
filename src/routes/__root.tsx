@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Open-source sports, performance & civic-tech ecosystem from Nairobi." },
       { name: "author", content: "Atlas Sanctum" },
       { property: "og:title", content: "Atlas Sanctum" },
-      { property: "og:description", content: "Sports as a system. Athletes as leaders. Communities as legacy." },
+      { property: "og:description", content: "Open-source sports, performance & civic-tech ecosystem from Nairobi." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Atlas Sanctum" },
+      { name: "twitter:description", content: "Open-source sports, performance & civic-tech ecosystem from Nairobi." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/60414dfc-57c7-4646-91d0-fb30c23b836b/id-preview-ba71324e--a0194136-e663-4020-a7f8-e2017f9a77c5.lovable.app-1779007950336.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/60414dfc-57c7-4646-91d0-fb30c23b836b/id-preview-ba71324e--a0194136-e663-4020-a7f8-e2017f9a77c5.lovable.app-1779007950336.png" },
     ],
     links: [
       {
