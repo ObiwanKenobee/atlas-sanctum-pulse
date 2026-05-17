@@ -1,26 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/atlas/Nav";
+import { Hero } from "@/components/atlas/Hero";
+import { Ticker } from "@/components/atlas/Ticker";
+import { Vision } from "@/components/atlas/Vision";
+import { Ecosystem } from "@/components/atlas/Ecosystem";
+import { PerformanceLab } from "@/components/atlas/PerformanceLab";
+import { Community } from "@/components/atlas/Community";
+import { Philosophy } from "@/components/atlas/Philosophy";
+import { Contributors } from "@/components/atlas/Contributors";
+import { Media } from "@/components/atlas/Media";
+import { FutureLabs } from "@/components/atlas/FutureLabs";
+import { Cta } from "@/components/atlas/Cta";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Atlas Sanctum — Sports as a System. Built in Nairobi." },
+      {
+        name: "description",
+        content:
+          "Open-source sports, human-performance, civic-tech and innovation ecosystem from Nairobi. Built by students. Built in Africa. Built for humanity.",
+      },
+      { property: "og:title", content: "Atlas Sanctum" },
+      { property: "og:description", content: "Sports as a system. Athletes as leaders. Communities as legacy." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <Hero />
+      <Ticker />
+      <Vision />
+      <Ecosystem />
+      <PerformanceLab />
+      <Community />
+      <Philosophy />
+      <Contributors />
+      <Media />
+      <FutureLabs />
+      <Cta />
+    </main>
+  );
 }
